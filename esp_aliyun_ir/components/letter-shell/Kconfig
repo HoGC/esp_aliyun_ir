@@ -1,0 +1,9 @@
+menu "letter-shell"
+
+    config SHELL_SUPPORT_END_LINE
+        bool "support end line log"
+        default n
+        help
+            support end line log
+
+endmenu

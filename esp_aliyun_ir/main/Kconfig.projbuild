@@ -1,0 +1,37 @@
+menu "Aliyun single mfg config"
+
+    config MFG_USE_HARDCODED_CODE
+        bool "Mfg use hard-coded"
+        default n
+        help
+            Mfg use hard-coded.
+
+    config MFG_DEVICE_NAME
+        string "Mfg device name"
+        default "name"
+        depends on MFG_USE_HARDCODED_CODE
+        help
+            Mfg device name.
+
+    config MFG_DEVICE_SECRET
+        string "Mfg device secret"
+        default "dsj3RuY74pgCBJ3zczKz1LaLK7RGApqh"
+        depends on MFG_USE_HARDCODED_CODE
+        help
+            Mfg device secret.
+    
+    config MFG_PRODUCT_KEY
+        string "Mfg product key"
+        default "a10BnLLzGv4"
+        depends on MFG_USE_HARDCODED_CODE
+        help
+            Mfg product key.
+    
+    config MFG_PRODUCT_SECRET
+        string "Mfg product secret"
+        default "pVfLpS1u3A9JM0go"
+        depends on MFG_USE_HARDCODED_CODE
+        help
+            Mfg pVfLpS1u3A9JM0go secret.
+
+endmenu
